@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Identity.UI;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.EntityFrameworkCore;
-using BulkyBook.Data;
+using BulkyBook.DataAccess.Data;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -29,11 +29,12 @@ namespace BulkyBook
         {
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseSqlServer(
-                    Configuration.GetConnectionString("DefaultConnection")));
-            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-                .AddEntityFrameworkStores<ApplicationDbContext>();
-            services.AddControllersWithViews();
-            services.AddRazorPages();
+                    Configuration.GetConnectionString("DefaultConnection")));//configuring SQL Server
+            services.AddDefaultIdentity<IdentityUser>() //when new user signed up, they need email to confirm.
+                                                        //options => options.SignIn.RequireConfirmedAccount = true
+                .AddEntityFrameworkStores<ApplicationDbContext>(); //default Identity with Identity Users adding EF using ApplicationDbContext 
+            services.AddControllersWithViews().AddRazorRuntimeCompilation();
+            services.AddRazorPages(); //Identity will be Razor Pages
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -53,17 +54,17 @@ namespace BulkyBook
             app.UseHttpsRedirection();
             app.UseStaticFiles();
 
-            app.UseRouting();
+            app.UseRouting(); //
 
-            app.UseAuthentication();
-            app.UseAuthorization();
+            app.UseAuthentication(); //
+            app.UseAuthorization(); //
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
-                endpoints.MapRazorPages();
+                    pattern: "{area=Customer}/{controller=Home}/{action=Index}/{id?}");
+                endpoints.MapRazorPages(); //routing for ASP.NET CORE MVC
             });
         }
     }
