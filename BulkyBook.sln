@@ -5,11 +5,11 @@ VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BulkyBook", "BulkyBook\BulkyBook.csproj", "{E722EEAB-4AE2-412D-A049-834473BC78F4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BulkyBook.DataAccess", "BulkyBook.DataAccess\BulkyBook.DataAccess.csproj", "{9033F178-011F-461F-95C0-241A0A3D4148}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BulkyBook.DataAccess", "BulkyBook.DataAccess\BulkyBook.DataAccess.csproj", "{9033F178-011F-461F-95C0-241A0A3D4148}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BulkyBook.Models", "BulkyBook.Models\BulkyBook.Models.csproj", "{6C130ACF-EBE7-477A-A649-2E051018851C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BulkyBook.Models", "BulkyBook.Models\BulkyBook.Models.csproj", "{6C130ACF-EBE7-477A-A649-2E051018851C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BulkyBook.Utility", "BulkyBook.Utility\BulkyBook.Utility.csproj", "{3CE13E9E-1AFE-4336-9E17-5D2C6F4A7A16}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BulkyBook.Utility", "BulkyBook.Utility\BulkyBook.Utility.csproj", "{3CE13E9E-1AFE-4336-9E17-5D2C6F4A7A16}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,20 +17,20 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E722EEAB-4AE2-412D-A049-834473BC78F4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E722EEAB-4AE2-412D-A049-834473BC78F4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E722EEAB-4AE2-412D-A049-834473BC78F4}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{E722EEAB-4AE2-412D-A049-834473BC78F4}.Debug|Any CPU.Build.0 = Release|Any CPU
 		{E722EEAB-4AE2-412D-A049-834473BC78F4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E722EEAB-4AE2-412D-A049-834473BC78F4}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9033F178-011F-461F-95C0-241A0A3D4148}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9033F178-011F-461F-95C0-241A0A3D4148}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9033F178-011F-461F-95C0-241A0A3D4148}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{9033F178-011F-461F-95C0-241A0A3D4148}.Debug|Any CPU.Build.0 = Release|Any CPU
 		{9033F178-011F-461F-95C0-241A0A3D4148}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9033F178-011F-461F-95C0-241A0A3D4148}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6C130ACF-EBE7-477A-A649-2E051018851C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6C130ACF-EBE7-477A-A649-2E051018851C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C130ACF-EBE7-477A-A649-2E051018851C}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{6C130ACF-EBE7-477A-A649-2E051018851C}.Debug|Any CPU.Build.0 = Release|Any CPU
 		{6C130ACF-EBE7-477A-A649-2E051018851C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C130ACF-EBE7-477A-A649-2E051018851C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{3CE13E9E-1AFE-4336-9E17-5D2C6F4A7A16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3CE13E9E-1AFE-4336-9E17-5D2C6F4A7A16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3CE13E9E-1AFE-4336-9E17-5D2C6F4A7A16}.Debug|Any CPU.ActiveCfg = Release|Any CPU
+		{3CE13E9E-1AFE-4336-9E17-5D2C6F4A7A16}.Debug|Any CPU.Build.0 = Release|Any CPU
 		{3CE13E9E-1AFE-4336-9E17-5D2C6F4A7A16}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3CE13E9E-1AFE-4336-9E17-5D2C6F4A7A16}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
